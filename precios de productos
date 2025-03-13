@@ -1,0 +1,18 @@
+Algoritmo sin_titulo
+definir valor Como Entero
+Escribir "Digite la cantidad de productos:"
+Leer n
+Dimension precios[100]
+Para i = 1 Hasta n Hacer
+Escribir "Digite el precio del producto ", i,
+Leer valor[i]
+Si valor[i] >= 0 Entonces
+Costo cotal <- costo total + valor[i]
+Sino
+Escribir "falla el valor no puede ser negativo. Se pondrá un valor de 0 para el
+producto ", I
+costoTotal <- costo total + 0
+FinSi
+FinPara
+Escribir "El costo total a gastar es: ", costoTotal
+FinAlgoritmo
