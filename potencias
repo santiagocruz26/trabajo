@@ -1,0 +1,15 @@
+1.
+Algoritmo sin_titulo
+	definir base, potencia Como Entero
+	Dimension num[100]
+	escribir "digite la cantidad de numeros"
+	leer n
+	para i<-1 Hasta n hacer 
+		escribir "ingrese numero :" ,i
+		leer num[i]		
+	FinPara
+	escribir "los numeros elvados al cuadrado son :"
+	para i<-1 hasta n hacer 
+		escribir num[i] * num[i]
+	FinPara
+FinAlgoritmo
