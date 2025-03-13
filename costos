@@ -1,0 +1,15 @@
+Algoritmo sin_titulo 
+	definir costototal Como real
+	costototal = 0
+	escribir "digite la cantidad de productos " 
+	leer cantidad 
+	para i<-1 Hasta cantidad hacer 
+		escribir "diga el nombre de le producto"
+		leer producto
+		escribir "ingrese precio:" 
+		leer precio
+		costototal = costototal + precio
+	FinPara 
+
+	escribir "el valor a gastar seria :" costototal
+FinAlgoritmo 
