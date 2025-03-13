@@ -1,0 +1,13 @@
+Algoritmo sin_titulo
+	definir num1, num2 Como Real
+	num2 = 0
+	num1 = 9
+	Escribir "dijite el valor deseado"
+	leer num2 
+	Si num2>=num1 Entonces
+		Escribir ">> el numero es mayor que 9 "
+	SiNo
+		Escribir ">> el numero es menor que 9"
+	Fin Si
+	
+FinAlgoritmo
