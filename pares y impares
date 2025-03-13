@@ -1,0 +1,10 @@
+Algoritmo sin_titulo
+	definir num1 como real
+	escribir " digite el numero " 
+	leer num1 
+	si numero1 mod 2 == 0 entonces 
+		escribir " el numero " , num1 ,  " es par " 
+	sino 
+		escribir " el numero " , num1 , " es impar " 
+	FinSi
+FinAlgoritmo
