@@ -1,0 +1,26 @@
+Algoritmo sin_titulo
+	definir num,rai,pa,residuo,x como entero
+	Dimension pares[3]
+	
+	escribir "escriba un numero de 5co digitos"
+	leer num
+	
+	para i <-3 hasta 1 con paso -1 hacer 
+		pares[i] <-num mod 100
+		num<- trunc(num/100)
+	FinPara
+	rai <- 0
+	residuo <- 0
+	para i <- 1 hasta 3 hacer 
+		residuo <- residuo * 100 + pares[i]
+		x <- 0
+		mientras ((20*rai+x)*x) <= residuo hacer
+			x <- x + 1
+		FinMientras
+		x <- x + 1
+		residuo <- residuo - ((20 * rai + x)* x)
+		rai <- rai * 10 + x
+	FinPara
+	escribir "la raiz es igual a:", rai
+	escribir " el residuo es igual a:",residuo 
+FinAlgoritmo
