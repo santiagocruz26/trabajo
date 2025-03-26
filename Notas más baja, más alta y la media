@@ -1,0 +1,40 @@
+Algoritmo sin_titulo
+	definir vector_notas como real
+	dimension vector_notas(5)
+	definir suma, media, nota_maxima, nota_minima como real
+	
+	suma <- 0
+	nota_maxima <- 0
+	nota_minima <- 10
+	
+	para i <- 1 hasta 5 hacer
+		escribir "Introduce la nota ", i, ":"
+		leer vector_notas(i)
+		
+		mientras vector_notas(i) < 0 o vector_notas(i) > 10 hacer
+			escribir "La nota debe estar entre 0 y 10. Vuelve a introducir la nota ", i, ":"
+			leer vector_notas(i)
+		FinMientras
+		
+		suma <- suma + vector_notas(i)
+		
+		si vector_notas(i) > nota_maxima entonces
+			nota_maxima <- vector_notas(i)
+		FinSi
+		
+		si vector_notas(i) < nota_minima entonces
+			nota_minima <- vector_notas(i)
+		FinSi
+	FinPara
+	
+	media <- suma / 5
+	
+	escribir "Notas del alumno: "
+	para i <- 1 hasta 5 hacer
+		escribir vector_notas(i), " "
+	FinPara
+	
+	escribir "Nota media: ", media
+	escribir "Nota más alta: ", nota_maxima
+	escribir "Nota más baja: ", nota_minima
+FinAlgoritmo
