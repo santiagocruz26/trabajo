@@ -1,0 +1,20 @@
+Algoritmo sin_titulo
+	definir vector_numeros Como Entero
+	Dimension vector_numeros[10]
+	
+	escribir"digite valores aleatorios del 1 al 10"
+	leer vector_numeros[10]
+	
+	para i <- 1 Hasta 10 Hacer 
+		vector_numeros(i) <- Aleatorio(1,10)
+	FinPara
+	
+	Escribir "numero  cuadrado  cubo"
+	para i <- 1 hasta 10 Hacer
+		
+		escribir vector_numeros(i),"         ",vecror_numeros(i) ^ 2,"          ",vector_numeros(i) ^ 3
+
+	FinPara
+
+	
+FinAlgoritmo
