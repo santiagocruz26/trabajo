@@ -1,0 +1,36 @@
+Algoritmo sin_titulo
+	definir cantidadllantas, descuento,precio, total, subtotal Como Real
+	definir nombrecliente como cadena 
+
+	
+	Escribir "digite su nombre"
+	leer nombrecliente
+	
+	escribir "digite la cantidad de llantas que desea"
+	leer cantidadllantas
+	
+	si cantidadllantas < 12 Entonces
+		precio <- 282.331
+		descuento <- 0.20
+		
+	SiNo
+			precio <- 282.331
+			descuento <- 0.25
+		
+		FinSi
+		
+		subtotal <- cantidadllantas * precio
+		descuento <- subtotal * descuento
+		total <- subtotal - descuento
+		
+		Escribir "LOS RESULTADOS SON:"
+		Escribir "=========//=========//=========//======="
+		Escribir "El nombre de el usuario es:", nombrecliente
+		escribir "la cantidad de llantas son:", cantidadllantas
+		Escribir "El descuento aplicado es de:", descuento
+		Escribir "El valor total seria:", total
+		Escribir "El subtotal seria:", subtotal
+		Escribir "=========//=========//=========//======="
+		
+	
+FinAlgoritmo
