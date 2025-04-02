@@ -1,0 +1,28 @@
+Algoritmo sin_titulo
+	escribir"ingrese la cantidad de empleados"
+	leer N
+	
+	totalempresa <- 0
+	
+	para i <- 1 hasta N hacer 
+		escribir"escriba el nombre del empleado:" i
+		leer nombre 
+		
+		escribir "ingrese el salario por hora"
+		leer salariohora
+		
+		sueldosemana <- 0
+		
+		para n <- 1 Hasta 7 Hacer
+			escribir" ingrese las horas trabajadas en el dia" j ":"
+			leer horasdia
+			
+			sueldosemana <- sueldosemana + (horasdia * salariohora)
+		FinPara
+		
+		escribir" el sueldo semanal es de", nombre,"es:" sueldosemana
+		totalempresa <- totalempresa + sueldosemana
+		
+		escribir"el sueldo que paga la empresa por los: ", N," empleados es:" totalempresa 
+	FinPara
+FinAlgoritmo
