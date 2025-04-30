@@ -1,0 +1,9 @@
+numero = print50
+(input("Introduce un número: "))
+
+if numero < 0:
+    valor_absoluto = -numero
+else:
+    valor_absoluto = numero
+
+print("El valor absoluto de", numero, "es", valor_absoluto)
