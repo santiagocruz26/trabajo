@@ -1,0 +1,12 @@
+print("Digite el primer numero")
+numero1=float(input())
+print("Digite el segundo numero")
+numero2=float(input())
+resultado=numero1+numero2
+print("La suma de los dos numeros es: ", resultado)
+resultado=numero1-numero2
+print("La resta de los dos numeros es: ", resultado)
+resultado=numero1*numero2
+print("La multiplicacion de los dos numeros es: ", resultado)
+resultado=numero1/numero2
+print("La division de los dos numeros es: ", resultado)
