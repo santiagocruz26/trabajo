@@ -1,0 +1,35 @@
+import math
+
+def producto_escalar(v1, v2):
+    resultado = 0
+    for a, b in zip(v1, v2):
+        resultado += a * b
+    return resultado
+
+def son_ortogonales(v1, v2):
+    return producto_escalar(v1, v2) == 0
+
+def son_paralelos(v1, v2):
+    if v2[0] == 0:
+        if v1[0] != 0:
+            return False
+        factor = None
+    else:
+        factor = v1[0] / v2[0]
+    for a, b in zip(v1, v2):
+        if b == 0:
+            if a != 0:
+                return False
+            
+        else:
+            if factor is None:
+                factor = a / b
+            elif a / b != factor:
+                return False
+    return True
+
+def norma(v):
+    suma = 0
+    for x in v:
+        suma += x ** 2
+    return math.sqrt(suma)
