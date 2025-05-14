@@ -1,0 +1,14 @@
+def poker(cartas):
+    
+    numeros = [carta[0] for carta in cartas]
+    for numero in set(numeros):
+        if numeros.count(numero) == 4:
+            return True
+    return False
+
+
+mano = [(7, 'corazones'), (7, 'espadas'), (7, 'diamantes'), (7, 'treboles'), (1, 'corazones')]
+print(poker(mano))  
+
+mano2 = [(7, 'corazones'), (7, 'espadas'), (7, 'diamantes'), (1, 'treboles'), (1, 'corazones')]
+print(poker(mano2))
