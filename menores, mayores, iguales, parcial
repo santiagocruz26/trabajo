@@ -1,0 +1,19 @@
+def clasificar_numeros(lista, k):
+    menores = []
+    iguales = []
+    mayores = []
+    for x in lista:
+        if x < k:
+            menores.append(x)
+        elif x == k:
+            iguales.append(x)
+        else:
+            mayores.append(x)
+    return menores, iguales, mayores
+
+def multiplos_de_k(lista, k):
+    multiplos = []
+    for x in lista:
+        if x % k == 0:
+            multiplos.append(x)
+    return multiplos
