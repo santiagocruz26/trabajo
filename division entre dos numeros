@@ -1,0 +1,8 @@
+primer_numero = int(input("Ingrese el primer número: "))
+segundo_numero = int(input("Ingrese el segundo número: "))
+
+# Verificar que el divisor no sea cero
+if segundo_numero == 0:
+    print("ERROR: No puede dar un resultado igual a cero.")
+else:
+    print("El resultado de la división es:", primer_numero / segundo_numero)
