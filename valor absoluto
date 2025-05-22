@@ -1,0 +1,23 @@
+from random import randint
+def cromo():
+  vec=[]
+  for i in range(0,23):
+    vec.append(randint(0,1))
+  return vec
+
+def fitN(x):
+  crox=[]
+  croy=[]
+  croz=[]
+  for i in range(0,7):
+    crox.append(x[i])
+  for i in range(8,15):
+    croy.append(x[i])
+
+  for i in range(16,23):
+    croz.append(x[i])
+  return crox, croy, croz
+
+  #Funcion de evaluacion
+
+fitN(cromo())
