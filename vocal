@@ -1,0 +1,5 @@
+frase = input("Introduce la frase: ")
+vocal = input("ingresa una vocal: ")
+
+
+print("A continuacion la frase...:", frase + vocal.upper()
