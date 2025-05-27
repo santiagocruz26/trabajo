@@ -1,0 +1,7 @@
+telefono = input("Introduce el número de teléfono con el formato +34-número-extensión: ")
+partes = telefono.split('-')
+if len(partes) == 3:
+    numero_sin_prefijo_ni_extension = partes[1]
+    print("Número sin prefijo ni extensión:", numero_sinprefijo_ni_extension)
+else:
+    print("El formato del número no es correcto. Debe ser: +34-número-extensión")
