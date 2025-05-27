@@ -1,0 +1,4 @@
+nomCompleto = input("Introduce tu nombre completo: ")
+print("En minúsculas: ", nomCompleto.lower())
+print("En mayúsculas: ", nomCompleto.upper())
+print("Mayuscula la 1era Letra: ", nomCompleto.title())
