@@ -1,0 +1,4 @@
+nombre = input("Introduce tu nombre: ")
+nombre = nombre.replace(" ", "")
+cantidad = len(nombre)
+print(nombre.upper(), "tiene", cantidad, "letras")
